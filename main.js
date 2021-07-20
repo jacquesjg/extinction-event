@@ -23,3 +23,19 @@ function fadeAway() {
     }
 }
 fadeAway();
+
+
+function hidePics() {
+
+    const dinosaur = document.querySelectorAll('.feature #row');
+
+    dinosaur.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            event.target.style.width = 0
+        });
+    })
+}
+
+hidePics();
+
+
